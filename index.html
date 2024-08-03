@@ -25,11 +25,11 @@
                 </button>
                 <div class="collapse navbar-collapse  justify-content-end" id="menu">
                     <ul class="navbar-nav d-flex gap-lg-3">
-                        <li class="nav-item"><a href="#" class="nav-link text-white">Home</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link text-white">About</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link text-white">Services</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link text-white">Projects</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link text-white">Contact</a></li>
+                        <li class="nav-item"><a href="#home" class="nav-link text-white js-scroll-trigger">Home</a></li>
+                        <li class="nav-item"><a href="#about" class="nav-link text-white js-scroll-trigger">About</a></li>
+                        <li class="nav-item"><a href="#services" class="nav-link text-white js-scroll-trigger">Services</a></li>
+                        <li class="nav-item"><a href="#projects" class="nav-link text-white js-scroll-trigger">Projects</a></li>
+                        <li class="nav-item"><a href="#contact" class="nav-link text-white js-scroll-trigger">Contact</a></li>
                     </ul>
                     <a href="#" class="btn btn-warning text-white ms-lg-5">My CV</a>
                 </div>
@@ -38,7 +38,7 @@
     </header>
     <main class="mt-5">
         <!--Hero Section-->
-        <div class="container-fluid">
+        <div id="home" class="container-fluid">
             <div class="container">
                 <div class="row justify-content-center flex-column-reverse flex-lg-row align-items-center">
                     <div class="col">
@@ -69,7 +69,7 @@
             </div>
         </div>
         <!--About Section-->
-        <div class="container-fluid bg-warning bg-opacity-75 h-100 py-5">
+        <div id="about" class="container-fluid bg-warning bg-opacity-75 h-100 py-5">
             <h1 class="text-center ">Who I Am</h1>
             <div class="row align-items-center flex-lg-row flex-column">
                 <div class="col col-lg-5 offset-lg-1">
@@ -139,7 +139,7 @@
             </div>
         </div>
         <!--Services Section-->
-        <div class="container-fluid py-5">
+        <div id="services" class="container-fluid py-5">
             <h1 class="text-center text-primary">Services</h1>
             <div class="container">
                 <div class="row">
@@ -220,7 +220,7 @@
             </div>
         </div>
         <!--Projects-->
-        <div class="container-fluid py-5">
+        <div id="projects" class="container-fluid py-5">
             <h1 class="text-center text-center">Recent Projects</h1>
             <div class="container mx-auto">
                 <ul class="nav nav-pills justify-content-center mt-4 mb-4">
@@ -331,7 +331,7 @@
         </div>
         <!--Testimonial-->
         <!--Contact-->
-        <div class="container-fluid">
+        <div id="contact" class="container-fluid">
             <div class="row align-items-center p-4 mx-auto">
                 <div class="col-12 col-lg-6">
                     <h1>Need support ?</h1>
@@ -353,12 +353,12 @@
                                 placeholder="name@example.com">
                         </div>
                         <div class="mb-3">
-                            <label for="full-name" class="form-label">Email address</label>
+                            <label for="full-name" class="form-label">Full Name</label>
                             <input type="text" class="form-control" id="full-name"
                                 placeholder="Jeans Didier">
                         </div>
                         <div class="mb-3">
-                            <label for="message" class="form-label">Example textarea</label>
+                            <label for="message" class="form-label">Message</label>
                             <textarea class="form-control" id="message" rows="3"></textarea>
                         </div>
                         <input type="submit" class="btn btn-warning text-white">
@@ -387,6 +387,12 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
         </script>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+        <script type="text/javascript">    
+           $('.js-scroll-trigger').click(function() {
+           $('.navbar-collapse').collapse('hide');
+           });
+      </script>
 </body>
 
 </html>
